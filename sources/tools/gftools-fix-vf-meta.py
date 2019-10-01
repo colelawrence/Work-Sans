@@ -119,16 +119,16 @@ def fix_nametable(ttfont):
     table.setName(default_style, 2, 3, 1, 1033)
 
     fullname = '{} {}'.format(family_name, default_style)
-    table.setName(unicode(fullname), 4, 3, 1, 1033)
+    table.setName(str(fullname), 4, 3, 1, 1033)
 
     psname = '{}-{}'.format(family_name.replace(' ', ''), default_style.replace(' ', ''))
-    table.setName(unicode(psname), 6, 3, 1, 1033)
+    table.setName(str(psname), 6, 3, 1, 1033)
 
     # uniqueid basedon fontmake output version;vendorid;psname
     font_version = format(ttfont['head'].fontRevision, '.3f')
     vendor = ttfont['OS/2'].achVendID
     uniqueid = '{};{};{}'.format(font_version, vendor, psname)
-    table.setName(unicode(uniqueid), 3, 3, 1, 1033)
+    table.setName(str(uniqueid), 3, 3, 1, 1033)
 
 
 def fix_bits(ttfont):
@@ -216,7 +216,7 @@ def add_other_vf_styles_to_nametable(ttfont, text_records):
     if leftover:
         nameid = ttfont['name'].names[-1].nameID + 1
         for record in leftover:
-            ttfont['name'].setName(unicode(record), nameid, 3, 1, 1033)
+            ttfont['name'].setName(str(record), nameid, 3, 1, 1033)
             nameid += 1
 
 
@@ -316,7 +316,7 @@ def main():
     ttfonts = [TTFont(p) for p in font_paths]
     if not fonts_are_same_family(ttfonts):
         raise Exception('Fonts have different family_names: [{}]'.format(
-            ', '.join(map(os.path.basename, ttfonts))
+            ', '.join(map(os.path.basename, font_paths))
         ))
 
     map(fix_nametable, ttfonts)

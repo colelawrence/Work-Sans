@@ -4,7 +4,8 @@ set -e
 
 # Setting the Source and VF name, determine if it's for Italic or Upright source from the argument passed to this script
 
-glyphsSource="ForecasterWorkSans.glyphs WorkSans-Italic.glyphs"
+# glyphsSource="ForecasterWorkSans.glyphs WorkSans-Italic.glyphs"
+glyphsSource="ForecasterWorkSans.glyphs"
 
 for i in $glyphsSource; do
 
@@ -25,7 +26,7 @@ for i in $glyphsSource; do
 	glyphsBuildSource=${i/".glyphs"/"-build.glyphs"}
 
 	# Call fontmake to generate variable font
-	echo "\tBuilding ${i}.glyphs..."
+	echo "\tBuilding ${i}..."
 	fontmake -o variable -g $glyphsBuildSource
 	echo "\t${VFname}.ttf generated"
 
@@ -82,9 +83,10 @@ done
 # for i in *.ttf; do
 # 	VFfonts+="$i "
 # done
-VFfonts="WorkSans-Italic-VF.ttf ForecasterWorkSans-VF.ttf"
+# VFfonts="WorkSans-Italic-VF.ttf ForecasterWorkSans-VF.ttf"
+VFfonts="ForecasterWorkSans-VF.ttf"
 echo "\tFixing VF Family Metadata..."
-python tools/gftools-fix-vf-meta.py $VFfonts
+python3 tools/gftools-fix-vf-meta.py $VFfonts
 
 
 # Clean up VFs
@@ -93,7 +95,8 @@ for i in $VFfonts; do
 done
 
 
-VFfontsFix="WorkSans-Italic-VF.ttf.fix ForecasterWorkSans-VF.ttf.fix"
+# VFfontsFix="WorkSans-Italic-VF.ttf.fix ForecasterWorkSans-VF.ttf.fix"
+VFfontsFix="ForecasterWorkSans-VF.ttf.fix"
 
 
 # ttfautohint-vf
@@ -113,4 +116,4 @@ for i in $VFfonts; do
 done
 
 
-mv ForecasterWorkSans-VF.ttf WorkSans-Roman-VF.ttf
+# mv ForecasterWorkSans-VF.ttf WorkSans-Roman-VF.ttf
