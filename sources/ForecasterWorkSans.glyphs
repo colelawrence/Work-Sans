@@ -6,7 +6,7 @@ DisplayStrings = (
 "Done:\012/apple/apple.rvrn/Adieresis.titl/Adieresis.titl.rvrn/Odieresis.titl/Odieresis.titl.rvrn \012/cedi/cedi.rvrn ¢/cent.rvrn/colonsign/colonsign.rvrn $/dollar.rvrn/guarani/guarani.rvrn/naira/naira.rvrn/peseta/peseta.rvrn/peso/peso.rvrn/won/won.rvrn/dollar.tf/dollar.tf.rvrn/curvedStemParagraphSignOrnament/curvedStemParagraphSignOrnament.rvrn ¶/paragraph.rvrn ©®/cent.tf/cent.tf.rvrn \012\012Brace:\012aæes/Udieresis.titl \012Forecaster\012Variables\012Abygai Peña\012Femur\012Cole Lawrence\012New feature for #kernkraft : Include an other scripts when dealing with the base glyph. \012@glyphsapp\012 @c\012@forecaster\012#forecaster\012@GlyphsExtension\012Timo Jaääsk Cole",
 "/dollar.tf/cent.tf/Adieresis.titl/Udieresis.titl/Odieresis.titl \012/dollar.tf.rvrn/cent.tf.rvrn/Adieresis.titl.rvrn/Udieresis.titl.rvrn/Odieresis.titl.rvrn \012$¢ÄÜÖ\012/dollar.rvrn/cent.rvrn/Adieresis.rvrn/Udieresis.rvrn/Odieresis.rvrn",
 "/apple/cedi ¢$/guarani/dollar.tf/cent.tf/peseta/won/Odieresis.titl/Udieresis.titl/curvedStemParagraphSignOrnament ¶/naira/colonsign/Adieresis.titl/peso \012Forecaster\012$25.34\012$10,26\0121234567890\01209876543210\012135792581470369\012$01\0121'2'3'4'5'6'7'8'9\0121'3'5'7'9\0122'4'6'8'0\0122.5.8.1.4.70\0121.2.3.4.5.6.7.8.9\0121.3.5.7.9 $1337.09\0122.4.6.8.0\0122.5.8.1.4.7.0\012",
-"/idieresis.sc m\012User Det\012abcdefghijjiklmnopqrstuvwxxyyz\012Peking Duck such luck\012Fucking Asshole\012Cunt Bitch\012We will destroy your home, your family, and your will to\012Hi, my name is Cole. music\012I love coming into work everyday\012variable fonts\012pointy hats\012Ounce\012Once upon a \012time\012I think you're kidding yourself if you don't think we have kerning issues.\012B\012and in some areas is considered a minor pest. In Ethiopia, Israel and Jordan, it is a reservoir of the leishmaniasis parasite.\012When will jill kerning be over?\012I just realized what this preview at the bottom is doing for me!\012His cologne filled the room with an ambience of strawberries. I don't much care for strawberries, but it did pair well with the poison in my snifter.\012ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+"/idieresis.sc m\012User Det\012abcdefghijjiklmnopqrstuvwxxyyz\012Peking Duck such luck\012Fucking Asshole\012Cunt Bitch\012We will destroy your home, your family, and your will to\012Hi, my name is Cole. music\012I love coming into work everyday\012variable fonts\012pointy hats\012Ounce relation\012Once upon a \012time\012I think you're kidding yourself if you don't think we have kerning issues.\012\012and in some areas is considered a minor pest. In Ethiopia, Israel and Jordan, it is a reservoir of the leishmaniasis parasite.\012When will jill kerning be over?\012I just realized what this preview at the bottom is doing for me!\012Log out\012Log in\012rging\012His cologne filled the room with an ambience of strawberries. I don't much care for strawberries, but it did pair well with the poison in my snifter.\012ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 "/Ydieresis.titl aæes/aogonek_j/adieresis.titl.sc/odieresis.titl.sc/udieresis.titl.sc/ydieresis.titl.sc/g_idieresis"
 );
 classes = (
@@ -133669,7 +133669,7 @@ v.sc = -50;
 "@MMK_R_hyphen" = -15;
 "@MMK_R_l" = -40;
 "@MMK_R_n" = -50;
-"@MMK_R_o" = -40;
+"@MMK_R_o" = -50;
 "@MMK_R_period" = -9;
 "@MMK_R_u" = -30;
 braceright = -15;
@@ -133845,7 +133845,7 @@ v.sc = -30;
 "@MMK_R_four" = -18;
 "@MMK_R_guilsinglleft" = -27;
 "@MMK_R_hyphen" = -89;
-"@MMK_R_o" = -15;
+"@MMK_R_o" = -80;
 "@MMK_R_o.sc" = -10;
 "@MMK_R_one" = -49;
 "@MMK_R_quoteleft" = -138;
@@ -134503,6 +134503,7 @@ seven.dnom = 40;
 "@MMK_R_J" = -6;
 "@MMK_R_a" = -28;
 "@MMK_R_h" = -20;
+"@MMK_R_i" = -40;
 "@MMK_R_l" = -10;
 "@MMK_R_n" = -70;
 "@MMK_R_quoteleft" = 40;
@@ -134690,7 +134691,7 @@ six.sc = -12;
 "@MMK_R_U" = -16;
 "@MMK_R_W" = -23;
 "@MMK_R_Y" = -40;
-"@MMK_R_a" = -10;
+"@MMK_R_a" = -52;
 "@MMK_R_copyright" = -18;
 "@MMK_R_f" = -80;
 "@MMK_R_guilsinglleft" = -17;
@@ -134821,7 +134822,7 @@ three = -20;
 "@MMK_R_Z" = -23;
 "@MMK_R_a" = -70;
 "@MMK_R_f" = -59;
-"@MMK_R_g" = -37;
+"@MMK_R_g" = -67;
 "@MMK_R_h" = -90;
 "@MMK_R_i" = -75;
 "@MMK_R_l" = -70;
@@ -135088,13 +135089,13 @@ slash = -54;
 "@MMK_R_Y" = -45;
 "@MMK_R_Z" = -33;
 "@MMK_R_a" = -53;
-"@MMK_R_g" = -25;
+"@MMK_R_g" = -50;
 "@MMK_R_guilsinglleft" = -30;
 "@MMK_R_h" = -50;
 "@MMK_R_hyphen" = -73;
 "@MMK_R_i" = -50;
 "@MMK_R_n" = -50;
-"@MMK_R_o" = -66;
+"@MMK_R_o" = -85;
 "@MMK_R_period" = -80;
 "@MMK_R_quoteleft" = 37;
 "@MMK_R_quoteright" = 20;
@@ -135247,7 +135248,7 @@ seven = -10;
 "@MMK_R_g" = -10;
 "@MMK_R_h" = -40;
 "@MMK_R_hyphen" = -12;
-"@MMK_R_i" = -30;
+"@MMK_R_i" = -40;
 "@MMK_R_n" = -30;
 "@MMK_R_o" = -40;
 "@MMK_R_s" = -30;
