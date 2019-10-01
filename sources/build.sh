@@ -4,14 +4,14 @@ set -e
 
 # Setting the Source and VF name, determine if it's for Italic or Upright source from the argument passed to this script
 
-glyphsSource="WorkSans.glyphs WorkSans-Italic.glyphs"
+glyphsSource="ForecasterWorkSans.glyphs WorkSans-Italic.glyphs"
 
 for i in $glyphsSource; do
 
-	if [ $i == "WorkSans.glyphs" ]; then
+	if [ $i == "ForecasterWorkSans.glyphs" ]; then
 		style="Upright"
-		VFname="WorkSans-VF"
-		# GXname="WorkSansGX"
+		VFname="ForecasterWorkSans-VF"
+		# GXname="ForecasterWorkSansGX"
 		# BraceGlyphs="a,ae,e,s"
 	elif [ $i == "WorkSans-Italic.glyphs" ]; then
 		style="Italic"
@@ -82,7 +82,7 @@ done
 # for i in *.ttf; do
 # 	VFfonts+="$i "
 # done
-VFfonts="WorkSans-Italic-VF.ttf WorkSans-VF.ttf"
+VFfonts="WorkSans-Italic-VF.ttf ForecasterWorkSans-VF.ttf"
 echo "\tFixing VF Family Metadata..."
 python tools/gftools-fix-vf-meta.py $VFfonts
 
@@ -93,7 +93,7 @@ for i in $VFfonts; do
 done
 
 
-VFfontsFix="WorkSans-Italic-VF.ttf.fix WorkSans-VF.ttf.fix"
+VFfontsFix="WorkSans-Italic-VF.ttf.fix ForecasterWorkSans-VF.ttf.fix"
 
 
 # ttfautohint-vf
@@ -113,4 +113,4 @@ for i in $VFfonts; do
 done
 
 
-mv WorkSans-VF.ttf WorkSans-Roman-VF.ttf
+mv ForecasterWorkSans-VF.ttf WorkSans-Roman-VF.ttf
